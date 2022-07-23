@@ -1,0 +1,53 @@
+
+4-3
+1. 어떤 방식으로 정보를 주고 받을까?
+== 어떤 원칙을 가지고 프로그램 사이(프론트엔드와 백엔드 서버 사이)를 연결할 것인가?
+(API:appication programming interface)
+REST API : 대중화, 사람들이 많이 씀
+
+-원칙
+1) URI는 정보의 자원을 표현해야 한다.
+
+[GET/members/delete/1] (x)
+[DELETE/members/1] (o)
+
+2) 자원에 대한 행위는 HTTP method(GET, POST, PUT, DELETE)로 표현한다.
+
+[GET/members/insert/2] (x)
+[POST/members/2] (o)
+
+-method-
+post : POST를 통해 해당 URI를 요청하면 리소스를 생성합니다.
+get : GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 document에 대한 자세한 정보를 가져온다.
+put : PUT를 통해 해당 리소스를 수정합니다.
+DELETE : DELETE를 통해 리소스를 삭제합니다.
+
+2. 정보의 형태는 어떻게 할까?
+1)XML
+<dog>
+    <name>식빵</name>
+    <family>웰시코기</family>
+    <age>1</age>
+    <weight>2.14</weight>
+</dog>
+
+2)json(javascript Object Notation)
+{
+    "name":"식빵",
+    "family":"웰시코기",
+    "age":1,
+    "weight":2.14
+}
+단순히 data format 프로그래밍 언어에 독립적!!
+
++GRAPH QL
+
+4-4 JS로 쉽게 REST API 사용하는 방법
+
+1)Fetch
+JS의 내장 라이브러리, IE의 경우 지원하지 않음, 일부 기능 부족
+
+2)Axios
+외부 라이브러리 모듈 설치 필요
+크로스 브라우징 가능, 
+Response timeout 처리 등 다양한 기능 존재

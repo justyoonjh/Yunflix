@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid rgb(155, 121, 121) ;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background-color: black;
+    color:aliceblue;
+    padding: 0px 20px;
+}
+
+h1 {
+    color: rgb(208, 18, 18);
+    font-size: 3.25em;
+    font-family: 'Roboto';
+    transform-origin: 0 0;
+    transform: scaleX(80) rotateY(89.45deg);
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+img {
+    width: 400px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+span {
+    padding-bottom: 10px;
+    padding-top: 5px;   
+}
